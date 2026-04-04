@@ -65,9 +65,8 @@ func main() {
 
 	// AI Client Initialization
 	aiBaseURL := os.Getenv("AI_BASE_URL")
-	if aiBaseURL == "" || strings.Contains(aiBaseURL, "thynaptic.com") {
-		// Use direct IP for better reliability/less auth hurdles during verification
-		aiBaseURL = "http://85.31.233.157:11434"
+	if aiBaseURL == "" {
+		aiBaseURL = "http://localhost:8089"
 	}
 
 	aiKey := os.Getenv("AI_API_KEY")

@@ -175,7 +175,7 @@ func (c *AIClient) CreateEmbedding(input string) ([]float32, error) {
 	}
 
 	reqBody := EmbeddingRequest{
-		Model: "nomic-embed-text:latest",
+		Model: "qwen3:1.7b",
 		Input: input,
 	}
 
@@ -300,7 +300,7 @@ Test Behaviors:
 		prompt += "\n\nPAST MISTAKES TO AVOID:\n" + strings.Join(agentFeedback, "\n")
 	}
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -375,7 +375,7 @@ Rewrite the explanation to cleanly incorporate the human feedback. Keep it under
 		prompt += "\n\nPAST MISTAKES TO AVOID:\n" + strings.Join(agentFeedback, "\n")
 	}
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -441,7 +441,7 @@ Provide a cohesive paragraph explaining what this file does overall, its role in
 		prompt += "\n\nPAST MISTAKES TO AVOID:\n" + strings.Join(agentFeedback, "\n")
 	}
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -502,7 +502,7 @@ Provide a cohesive paragraph explaining the architectural role of this entire pa
 		prompt += "\n\nPAST MISTAKES TO AVOID:\n" + strings.Join(agentFeedback, "\n")
 	}
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -663,7 +663,7 @@ Return ONLY a raw JSON object with no markdown wrapping. The JSON must exactly m
   "notes": "Target is a Swagger UI. Likely exposes internal API endpoints without proper auth checks."
 }`, targetJSON)
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -792,7 +792,7 @@ DO NOT include any text other than the JSON object.`, reconContext, intelligence
 		prompt += "\n\nCURRICULUM SYLLABUS (LESSONS TO APPLY):\n" + strings.Join(syllabus, "\n")
 	}
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -914,7 +914,7 @@ Return ONLY a raw JSON object with no markdown wrapping. The JSON must exactly m
 }
 DO NOT include any text other than the JSON object.`, payload, httpResponse)
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -1029,7 +1029,7 @@ Return ONLY a raw JSON array of objects. No markdown, no conversational text. Th
   }
 ]`, swaggerJSON)
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -1135,7 +1135,7 @@ Review the provided successful strikes and security intelligence, and synthesize
 STRICT OUTPUT FORMAT:
 Return ONLY the raw Markdown text. Do not wrap it in a code block or JSON object.`, strikesJSON, intelligenceJSON)
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {
@@ -1238,7 +1238,7 @@ func (c *AIClient) AnalyzeFinding(fileName, vulnType, snippet, description strin
 		"}\n" +
 		"DO NOT include any other text, warnings about constraints, or meta-commentary."
 
-	model := "llama3.2:latest"
+	model := "qwen3:1.7b"
 	if c.Router != nil {
 		selected := c.Router.SelectModel(prompt)
 		if selected != "" && !strings.Contains(selected, "embed") {

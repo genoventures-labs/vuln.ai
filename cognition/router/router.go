@@ -18,17 +18,18 @@ type Router struct {
 	Models []string
 }
 
-type ollamaTagsResponse struct {
-	Models []struct {
-		Name string `json:"name"`
-	} `json:"models"`
+type oriModelsResponse struct {
+	Data []struct {
+		ID string `json:"id"`
+	} `json:"data"`
 }
 
-// NewRouter initializes a Router with live model discovery from the Ollama VPS.
+// NewRouter initializes a Router with live model discovery from ORI API.
 func NewRouter() (*Router, error) {
 	models, err := discoverModels()
 	if err != nil {
-		return nil, err
+		// Fall back to known default rather than failing hard
+		return &Router{Models: []string{"qwen3:1.7b"}}, nil
 	}
 	return &Router{Models: models}, nil
 }
@@ -77,8 +78,8 @@ func (r *Router) SelectModel(prompt string) string {
 }
 
 const (
-	defaultOrchestrationBaseURL = "http://85.31.233.157:8002/api/v1"
-	defaultOllamaHost           = "http://85.31.233.157:11434"
+	defaultOrchestrationBaseURL = "http://localhost:8089/v1"
+	defaultOllamaHost           = "http://localhost:8089"
 	defaultResolveTimeout       = 6 * time.Second
 	defaultTagsTimeout          = 6 * time.Second
 )
@@ -152,7 +153,7 @@ func ResolveRemote(req ResolveRequest) (string, error) {
 }
 
 func discoverModels() ([]string, error) {
-	host := strings.TrimSpace(os.Getenv("OLLAMA_HOST"))
+	host := strings.TrimSpace(os.Getenv("AI_BASE_URL"))
 	if host == "" {
 		host = defaultOllamaHost
 	}
@@ -160,11 +161,15 @@ func discoverModels() ([]string, error) {
 		host = "http://" + host
 	}
 	host = strings.TrimRight(host, "/")
-	url := host + "/api/tags"
+	url := host + "/v1/models"
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		return nil, fmt.Errorf("create model discovery request: %w", err)
+	}
+	apiKey := strings.TrimSpace(os.Getenv("AI_API_KEY"))
+	if apiKey != "" {
+		req.Header.Set("Authorization", "Bearer "+apiKey)
 	}
 	client := &http.Client{Timeout: defaultTagsTimeout}
 	resp, err := client.Do(req)
@@ -176,14 +181,14 @@ func discoverModels() ([]string, error) {
 		msg, _ := io.ReadAll(io.LimitReader(resp.Body, 1024))
 		return nil, fmt.Errorf("discover models status %d: %s", resp.StatusCode, strings.TrimSpace(string(msg)))
 	}
-	var payload ollamaTagsResponse
+	var payload oriModelsResponse
 	if err := json.NewDecoder(resp.Body).Decode(&payload); err != nil {
-		return nil, fmt.Errorf("decode tags response: %w", err)
+		return nil, fmt.Errorf("decode models response: %w", err)
 	}
 	seen := make(map[string]bool)
 	var models []string
-	for _, m := range payload.Models {
-		name := strings.TrimSpace(m.Name)
+	for _, m := range payload.Data {
+		name := strings.TrimSpace(m.ID)
 		if name == "" || seen[name] {
 			continue
 		}
