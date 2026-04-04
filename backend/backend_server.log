@@ -1,0 +1,141 @@
+2026/04/02 12:09:56 Warning: Failed to initialize cognitive router: discover models from http://85.31.233.157:11434/api/tags: Get "http://85.31.233.157:11434/api/tags": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/04/02 12:09:56 [H1 Scraper] Cron scheduler started.
+2026/04/02 12:09:56 [CWE Scraper] Cron scheduler started.
+2026/04/02 12:09:56 Server starting on port 8080
+2026/04/02 12:10:01 "POST http://localhost:8080/api/index HTTP/1.1" from [::1]:56985 - 200 60B in 1.0145ms
+2026/04/02 12:10:01 Starting indexing for path: ./smoke_tests/verify_supply_chain
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/go.mod at line 6
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/go.mod at line 6
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/go.mod at line 7
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/go.mod at line 7
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/go.mod at line 8
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/go.mod at line 8
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json at line 3
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json at line 3
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json at line 5
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json at line 5
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json at line 6
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json at line 6
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json at line 7
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json at line 7
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in smoke_tests/verify_supply_chain/package.json at line 8
+2026/04/02 12:10:07 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json at line 8
+2026/04/02 12:10:07 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:07 "POST http://localhost:8080/api/scan HTTP/1.1" from [::1]:57012 - 200 1933B in 2.180334ms
+Error creating embedding for smoke_tests/verify_supply_chain/go.mod chunk 0: Post "http://85.31.233.157:11434/v1/embeddings": dial tcp 85.31.233.157:11434: connect: operation timed out
+Error creating embedding for smoke_tests/verify_supply_chain/package.json chunk 0: Post "http://85.31.233.157:11434/v1/embeddings": dial tcp 85.31.233.157:11434: connect: operation timed out
+2026/04/02 12:10:38 Indexing completed for path: ./smoke_tests/verify_supply_chain
+2026/04/02 12:10:49 "OPTIONS http://localhost:8080/api/scan HTTP/1.1" from [::1]:57057 - 200 0B in 1.280041ms
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_idor_escalation.go at line 35
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_idor_escalation.go at line 47
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_idor_escalation.go at line 59
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_idor_escalation.go at line 74
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_sqli.go at line 10
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_sqli.go at line 19
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_sqli.go at line 29
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/smoke_test_vuln.go at line 11
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 9
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 10
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 14
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 19
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 20
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 23
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-RESET-FLOW in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-SESSION-FIXATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 33
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 48
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 49
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 50
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 56
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 57
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-TOKEN-ROTATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A01-TENANT-ISOLATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 75
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A01-TENANT-ISOLATION in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 79
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 80
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 86
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 AuthFlow: Tracing logic for OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 87
+2026/04/02 12:10:49 AuthFlow: Safely handled OWASP-A07-OAUTH-MISCONFIG in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 9
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 14
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 19
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_auth_flow/smoke_test_auth_logic.go at line 23
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 11
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 20
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A04-RATE-LIMITING in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 34
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 42
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A01-BOLA-IDOR in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A08-MASS-ASSIGNMENT in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 53
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A08-MASS-ASSIGNMENT in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 61
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A08-MASS-ASSIGNMENT in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 67
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 69
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 71
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 74
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 79
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 81
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 84
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 85
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 87
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 90
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 95
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 99
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 102
+2026/04/02 12:10:49 BusinessLogic: Safely handled OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go (False Positive mitigated by structural logic)
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 116
+2026/04/02 12:10:49 BusinessLogic: Tracing logic for OWASP-A03-TOCTOU-RACE in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_business_logic/smoke_test_business_logic.go at line 117
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 6
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 6
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 7
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 7
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 8
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod at line 8
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/go.mod (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 3
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 3
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 5
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 5
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 6
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 6
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 7
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 7
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-VULN-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 8
+2026/04/02 12:10:49 SupplyChain: Tracing logic for OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json at line 8
+2026/04/02 12:10:49 SupplyChain: Safely handled OWASP-A06-OUTDATED-DEP in /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend/smoke_tests/verify_supply_chain/package.json (Component version is secure)
+2026/04/02 12:10:49 "POST http://localhost:8080/api/scan HTTP/1.1" from [::1]:57057 - 200 68595B in 98.709625ms
+signal: killed

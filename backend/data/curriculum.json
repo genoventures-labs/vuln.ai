@@ -1,0 +1,20 @@
+{
+  "cwe_285_edge_1": {
+    "id": "cwe_285_edge_1",
+    "topic": "Broken Object Level Authorization",
+    "type": "Edge",
+    "content": "If the API uses sequential IDs, try enumerating the ID parameter: `/api/users/1` -\u003e `/api/users/2`. If using UUIDs, look for leaked UUIDs in other API responses."
+  },
+  "cwe_89_baseline_1": {
+    "id": "cwe_89_baseline_1",
+    "topic": "SQL Injection",
+    "type": "Baseline",
+    "content": "Always try terminating the string sequence and appending a truthy statement: `' OR 1=1 --`"
+  },
+  "cwe_89_clean_1": {
+    "id": "cwe_89_clean_1",
+    "topic": "SQL Injection",
+    "type": "Clean",
+    "content": "Never concatenate strings. Use prepared statements like `db.QueryRow(\"SELECT * FROM users WHERE username = ?\", u)`"
+  }
+}

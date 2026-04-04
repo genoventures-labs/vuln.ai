@@ -1,0 +1,30 @@
+{
+  "fb_mock_001": {
+    "id": "fb_mock_001",
+    "task_type": "AnalyzeFinding",
+    "failed_path": "Assuming that os.Getenv is always a hardcoded secret pattern.",
+    "corrected_path": "os.Getenv simply reads from the environment and is standard practice. Only flag hardcoded string literals as secrets.",
+    "timestamp": "2026-02-22T09:26:59-08:00"
+  },
+  "vuln_patch_1771800832724178000": {
+    "id": "vuln_patch_1771800832724178000",
+    "task_type": "AutoPatch",
+    "failed_path": "Attempted to replace '\tfmt.Printf(\"User input: %s\\n\", userInput)' in dummy_vuln.go",
+    "corrected_path": "Patch failed: toolflow fail-closed node=patch_node_1 tool=patch_file err=target_snippet not found identically in the file. Patch aborted for safety.",
+    "timestamp": "2026-02-22T14:53:52-08:00"
+  },
+  "vuln_patch_1771800846333125000": {
+    "id": "vuln_patch_1771800846333125000",
+    "task_type": "AutoPatch",
+    "failed_path": "Attempted to replace '\tfmt.Printf(\"User input: %s\\n\", userInput)' in dummy_vuln.go",
+    "corrected_path": "Patch failed: toolflow fail-closed node=patch_node_1 tool=patch_file err=failed to create git branch vuln-patch-20260222-145406: exit status 128 (Output: fatal: not a git repository (or any of the parent directories): .git\n)",
+    "timestamp": "2026-02-22T14:54:06-08:00"
+  },
+  "vuln_patch_1771800878547403000": {
+    "id": "vuln_patch_1771800878547403000",
+    "task_type": "AutoPatch",
+    "failed_path": "Attempted to replace '\tfmt.Printf(\"User input: %s\\n\", userInput)' in dummy_vuln.go",
+    "corrected_path": "Patch failed: toolflow fail-closed node=patch_node_1 tool=patch_file err=file is not inside a git repository: /Users/cass/.gemini/antigravity/playground/azimuthal-belt/backend",
+    "timestamp": "2026-02-22T14:54:38-08:00"
+  }
+}

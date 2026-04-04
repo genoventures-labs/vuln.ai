@@ -1,0 +1,5 @@
+2026/04/02 12:09:39 Warning: Failed to initialize cognitive router: discover models from http://85.31.233.157:11434/api/tags: Get "http://85.31.233.157:11434/api/tags": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026/04/02 12:09:39 [H1 Scraper] Cron scheduler started.
+2026/04/02 12:09:39 [CWE Scraper] Cron scheduler started.
+2026/04/02 12:09:39 Server starting on port 8080
+signal: killed

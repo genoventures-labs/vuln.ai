@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "auto_apply": false,
+  "interval_hours": 24,
+  "last_checked_at": "2026-02-20T13:57:40.823848195Z",
+  "last_seen": "v0.7.0"
+}
